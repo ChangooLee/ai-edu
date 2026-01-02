@@ -182,9 +182,6 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 **이탈리아 연구팀 사례**: 25개 주요 AI 챗봇을 대상으로 시적 표현을 활용한 공격을 수행한 결과, 평균 62%의 챗봇이 보안 장치를 무시하고 잘못된 정보를 제공했습니다.
 
-**관련 영상**: 
-* [Ai hallucinations explained (2분 4초)](https://www.youtube.com/watch?v=nLbaUhEAx5c) - Moveworks
-
 **2026년 할루시네이션 현황**:
 * AI 모델의 할루시네이션 발생률은 모델과 작업 유형에 따라 다르지만, 법률 문서 작성 시 특히 위험
 * 최신 연구에 따르면 복잡한 추론 작업에서 할루시네이션 발생 가능성이 높음
@@ -369,7 +366,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 **2026년 피지컬 AI 전시회**: 2026년 10월 14일부터 16일까지 창원컨벤션센터에서 'THE NEXT AI 2026' 전시회가 개최됩니다. 피지컬 AI, AI 기반 제조 솔루션, 스마트 팩토리 등 산업 중심의 혁신 기술과 적용 사례를 소개합니다. ([nextaikorea.com](https://www.nextaikorea.com/))
 
 **관련 영상**: 
-* [Walk, Run, Crawl, RL Fun | Boston Dynamics | Atlas (1분 8초)](https://www.youtube.com/watch?v=I44_zbEwz_w) - Boston Dynamics 공식
+* [Advancing with Humanoid Robots in Productions 🦾🤖 (1분 23초)](https://www.youtube.com/watch?v=bCkl9hIEb6k) - BMW Group 공식
 * [완전 자율 주행(감독) (2분 36초)](https://www.youtube.com/watch?v=1mFz3PYTwx8) - Tesla Tutorials
 
 **하지만 피지컬 AI가 실제 세계에서 작동하려면, AI가 물리적 세계를 이해할 수 있어야 합니다...**
@@ -550,9 +547,6 @@ AI 기술의 발전은 단순히 기술적 변화를 넘어 경제 구조 자체
 **의미**: "큰 회사만 쓰는 AI"에서 → **개인/중소조직도 쓰는 AI**로 이동.
 
 **한 줄 결론**: AI는 "특정 기업의 신기한 기술"이 아니라 **산업 전반의 표준 도구**가 되는 중입니다.
-
-**관련 영상**: 
-* [2026 AI 대예측! 인간은 뭘 하고 살아야 할까 ㅣ 아는 만큼 보이는 과학 (김대식 교수 1부) (24분)](https://www.youtube.com/watch?v=fBAue3aqqQc) - 아만보! 아는 만큼 보인다
 
 **이제 실제로 어떻게 활용할 수 있는지 알아보겠습니다...**
 
