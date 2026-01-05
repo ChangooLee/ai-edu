@@ -9,15 +9,13 @@
 17년차 IT 전문가로, 소프트웨어 개발부터 대규모 시스템 설계·운영까지 폭넓게 경험해 왔습니다.
 기업 환경에서 생성형 AI(LLM) 기반 솔루션을 설계하고, 실제 서비스에 적용 가능한 형태로 구현·운영 체계까지 구축하는 일을 하고 있습니다.
 
-**📌 용어 설명**: **[LLM (Large Language Model / 거대 언어 모델)]**: 수많은 텍스트를 학습하여 다음 단어를 예측하는 AI 모델. ChatGPT, Claude 등이 대표적입니다.
-
 ---
 
 ## 오늘 이 강의에서 배울 것
 
 **"AI가 뭔지"를 넘어서 "어떻게 안전하고 똑똑하게 쓰는지"까지**
 
-2026년 현재, 조직의 **78%가 AI를 사용**하고 있습니다. 전년 55%에서 급증한 수치입니다. ([Stanford HAI][1])
+2026년 현재, 조직의 **78%가 AI를 사용**하고 있습니다. 전년 55%에서 급증한 수치입니다. (https://hai.stanford.edu/ai-index/2025-ai-index-report)
 
 하지만 **AI를 잘 쓰는 사람**과 **AI에 속는 사람**의 차이는 명확합니다.
 
@@ -25,27 +23,48 @@
 
 ---
 
-## 강의 목차 (2시간)
+## 강의 목차
 
-| 순서 | 주제 | 시간 | 핵심 내용 |
-|------|------|------|----------|
-| **1막** | 생성형 AI의 등장 | 15분 | 왜 2022년 이후 폭발했나 |
-| **2막** | LLM이란 무엇인가 | 10분 | 다음 단어를 예측하는 기계 |
-| **3막** | LLM의 한계와 할루시네이션 | 15분 | 해마테스트, 세종대왕 노트북 사례 |
-| **4막** | RAG의 등장 | 10분 | 근거를 찾는 기계 |
-| **5막** | 에이전트의 등장 | 10분 | 일을 하는 기계 |
-| **6막** | 피지컬 AI | 10분 | 물리적 세계로의 확장 |
-| **6-1막** | 월드모델: 물리적 세계를 이해하는 AI | 10분 | 물리적 세계를 이해하는 AI |
-| **6-2막** | 메타 환경: AI 학습을 위한 가상 세계 | 10분 | 가상 학습 환경 |
-| **7막** | 산업의 변화와 AI 헤게모니 | 15분 | 한국 정부 예산 10조 1,000억 원 |
-| **8막** | 무엇을 할 수 있는가? | 25분 | 실전 예시: 국제 곡물 원자재 레포트, 인포그래픽 |
-| **9막** | 어떻게 써야 하는가? | 20분 | ChatGPT, Claude, Gemini, Perplexity 비교 |
-| **10막** | AI 시대에 우리가 준비해야 할 것들 | 10분 | AI 기본법, 안전 체크리스트, 사이버 보안 |
-| **11막** | AI의 미래 전망: 2026-2030년 | 10분 | 시장 성장, AGI 타임라인, 사회적 영향 |
+**1막: 생성형 AI의 등장**
+- 왜 2022년 이후 폭발했나
+
+**2막: LLM이란 무엇인가**
+- 다음 단어를 예측하는 기계
+
+**3막: LLM의 한계와 할루시네이션**
+- 해마테스트, 세종대왕 노트북 사례
+
+**4막: RAG의 등장**
+- 근거를 찾는 기계
+
+**5막: 에이전트의 등장**
+- 일을 하는 기계
+
+**6막: 피지컬 AI**
+- 물리적 세계로의 확장
+  - 6-1막: 월드모델 - 물리적 세계를 이해하는 AI
+  - 6-2막: 메타 환경 - AI 학습을 위한 가상 세계
+
+**7막: 산업의 변화와 AI 헤게모니**
+- 한국 정부 예산 10조 1,000억 원
+
+**8막: 무엇을 할 수 있는가?**
+- 실전 예시: 국제 곡물 원자재 레포트, 인포그래픽
+
+**9막: 어떻게 써야 하는가?**
+- ChatGPT, Claude, Gemini, Perplexity 비교
+
+**10막: AI 시대에 우리가 준비해야 할 것들**
+- AI 기본법, 안전 체크리스트, 사이버 보안
+
+**11막: AI의 미래 전망: 2026-2030년**
+- 시장 성장, AGI 타임라인, 사회적 영향
 
 ---
 
 ## AI의 3번 변신 (한눈에 보기)
+
+다음 내용을 플로우차트 또는 타임라인으로 시각화:
 
 **1막: 말하는 기계** → 질문하면 답하지만, "그럴듯함"이 "정확함"은 아님
 
@@ -65,17 +84,55 @@
 
 생성형 AI가 2022년 이후 급속히 확산된 이유는 단순히 기술이 발전했기 때문만이 아닙니다. **기술의 성숙**과 **사용자 경험의 혁신**이 동시에 일어났기 때문입니다.
 
+**AI 발전 타임라인 (2017-2026)**
+
+다음 주요 이벤트들을 타임라인으로 시각화:
+
+**2017년: Transformer 등장**
+- 의미: 언어를 다루는 핵심 구조
+- 기술적 배경: Attention 메커니즘으로 문맥 이해 혁신
+- 출처: https://arxiv.org/abs/1706.03762
+
+**2022년: ChatGPT 공개**
+- 의미: 대화 UI로 대중화
+- 기술적 배경: GPT-3.5 기반, 직관적인 채팅 인터페이스
+- 출처: https://openai.com/index/chatgpt/
+
+**2024년: 멀티모달 실시간화**
+- 의미: 글+음성+이미지 통합
+- 기술적 배경: GPT-4o로 실시간 음성/이미지 처리
+- 출처: https://openai.com/index/hello-gpt-4o/
+
+**2025년: 에이전트 도구화**
+- 의미: 웹검색·파일검색·컴퓨터 사용
+- 기술적 배경: Responses API로 도구 사용 자동화
+- 출처: https://openai.com/index/new-tools-for-building-agents/
+
+**2025년: 피지컬 AI 부상**
+- 의미: 물리적 세계와 상호작용
+- 기술적 배경: 로봇, 자율주행차, 드론과 AI 결합
+- 출처: [chosun.com](https://www.chosun.com/national/weekend/2025/02/08/ZW5FIRDCPBCT3CIPR3C33IRBQI/)
+
+**2026년: AI 빅뱅 시대**
+- 의미: AI가 업무 수행 주체로 전환
+- 기술적 배경: AI 에이전트 확산, 피지컬 AI 혁신, AI 인프라 패권 경쟁 심화
+- 출처: [v.daum.net](https://v.daum.net/v/20251231103004847)
+
+**2026년 1월 22일: AI 기본법 시행**
+- 의미: 한국 AI 규제 체계 구축
+- 기술적 배경: AI 생성물 워터마크 의무화 등 규제 시행
+- 출처: [wikidocs.net](https://wikidocs.net/blog/%40daje0601/6154/)
+
 | 연도 | 사건 | 의미 | 기술적 배경 | 출처 |
 |------|------|------|------------|------|
-| 2017 | Transformer 등장 | 언어를 다루는 핵심 구조 | Attention 메커니즘으로 문맥 이해 혁신 | [arXiv][3] |
-| 2022 | ChatGPT 공개 | 대화 UI로 대중화 | GPT-3.5 기반, 직관적인 채팅 인터페이스 | [OpenAI][4] |
-| 2024 | 멀티모달 실시간화 | 글+음성+이미지 통합 | GPT-4o로 실시간 음성/이미지 처리 | [OpenAI][5] |
-| 2025 | 에이전트 도구화 | 웹검색·파일검색·컴퓨터 사용 | Responses API로 도구 사용 자동화 | [OpenAI][2] |
+| 2017 | Transformer 등장 | 언어를 다루는 핵심 구조 | Attention 메커니즘으로 문맥 이해 혁신 | https://arxiv.org/abs/1706.03762 |
+| 2022 | ChatGPT 공개 | 대화 UI로 대중화 | GPT-3.5 기반, 직관적인 채팅 인터페이스 | https://openai.com/index/chatgpt/ |
+| 2024 | 멀티모달 실시간화 | 글+음성+이미지 통합 | GPT-4o로 실시간 음성/이미지 처리 | https://openai.com/index/hello-gpt-4o/ |
+| 2025 | 에이전트 도구화 | 웹검색·파일검색·컴퓨터 사용 | Responses API로 도구 사용 자동화 | https://openai.com/index/new-tools-for-building-agents/ |
 | 2025 | 피지컬 AI 부상 | 물리적 세계와 상호작용 | 로봇, 자율주행차, 드론과 AI 결합 | [chosun.com](https://www.chosun.com/national/weekend/2025/02/08/ZW5FIRDCPBCT3CIPR3C33IRBQI/) |
 | 2026 | AI 빅뱅 시대 | AI가 업무 수행 주체로 전환 | AI 에이전트 확산, 피지컬 AI 혁신, AI 인프라 패권 경쟁 심화 | [v.daum.net](https://v.daum.net/v/20251231103004847) |
 | 2026-01-22 | AI 기본법 시행 | 한국 AI 규제 체계 구축 | AI 생성물 워터마크 의무화 등 규제 시행 | [wikidocs.net](https://wikidocs.net/blog/%40daje0601/6154/) |
 
-**📌 용어 설명**:
 * **[Transformer]**: AI가 문장의 맥락을 이해하는 핵심 구조. 문장 전체를 동시에 분석하여 단어 간 관계를 파악합니다.
 * **[Attention 메커니즘]**: AI가 문장에서 중요한 부분에 집중하는 방식. 마치 사람이 문장을 읽을 때 중요한 단어에 주의를 기울이는 것과 같습니다.
 * **[멀티모달]**: 텍스트, 이미지, 음성 등 여러 형태의 정보를 동시에 처리하는 기술. 예를 들어 사진을 보고 설명하거나, 음성을 듣고 텍스트로 변환하는 것.
@@ -104,7 +161,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 > 그래서 꼭 기억할 1문장
 > **AI의 유창함 = 정확함이 아닐 수 있습니다.**
-> (이 한계를 해결하려고 RAG/검색/검증이 중요해졌습니다.) ([arXiv][7])
+> (이 한계를 해결하려고 RAG/검색/검증이 중요해졌습니다.) (https://arxiv.org/abs/2005.11401)
 
 **이제 AI가 어떻게 작동하는지 알아보겠습니다...**
 
@@ -116,7 +173,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 ### 기본 개념: 다음 단어를 예측하는 기계
 
-**LLM(거대 언어 모델)** = "아주 많은 글을 읽고, 다음 단어를 예측하도록 훈련된 모델"
+**LLM(Large Language Model, 거대 언어 모델)** = "아주 많은 글을 읽고, 다음 단어를 예측하도록 훈련된 모델"
 
 **작동 원리**:
 1. **토큰화**: 문장을 토큰(짧은 조각)으로 쪼갬
@@ -124,9 +181,9 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 3. **예측**: 주어진 문맥에서 다음 토큰을 확률적으로 예측
 4. **생성**: 예측된 토큰을 이어붙여 문장 완성
 
-**📌 용어 설명**: **[토큰화]**: 문장을 작은 단위(토큰)로 나누는 과정. 예를 들어 "안녕하세요"를 "안녕", "하세요"로 나누는 것.
+**[토큰화]**: 문장을 작은 단위(토큰)로 나누는 과정. 예를 들어 "안녕하세요"를 "안녕", "하세요"로 나누는 것.
 
-**Transformer 구조의 핵심**: Attention 메커니즘으로 문장 전체의 맥락을 동시에 고려 ([arXiv][3])
+**Transformer 구조의 핵심**: Attention 메커니즘으로 문장 전체의 맥락을 동시에 고려 (https://arxiv.org/abs/1706.03762)
 
 **관련 영상**: 
 * [How Large Language Models Work (5분 34초)](https://www.youtube.com/watch?v=5sLYAQS9sWQ) - IBM Technology
@@ -153,11 +210,11 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 | 모델 | 개발사 | 파라미터 규모 | 주요 특징 | 출처 |
 |------|--------|--------------|----------|------|
-| GPT-5 | OpenAI | 미공개 | 에이전트 기능 강화, 멀티모달 통합 | [OpenAI][6] |
-| Claude 4 (Opus 4) | Anthropic | 미공개 | 하이브리드 추론, 컴퓨터 사용 강화 | [Anthropic][18] |
-| Gemini 2.0 | Google | 미공개 | 에이전트 시대 모델, 도구 사용/멀티모달 출력 | [blog.google][10] |
+| GPT-5 | OpenAI | 미공개 | 에이전트 기능 강화, 멀티모달 통합 | https://openai.com/index/introducing-gpt-5/ |
+| Claude 4 (Opus 4) | Anthropic | 미공개 | 하이브리드 추론, 컴퓨터 사용 강화 | https://www.anthropic.com/news/claude-4 |
+| Gemini 2.0 | Google | 미공개 | 에이전트 시대 모델, 도구 사용/멀티모달 출력 | https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/ |
 
-**📌 용어 설명**: **[하이브리드 추론]**: 빠른 응답과 깊은 사고를 모두 지원하는 방식. 간단한 질문은 빠르게, 복잡한 질문은 깊이 생각해서 답변합니다.
+**[하이브리드 추론]**: 빠른 응답과 깊은 사고를 모두 지원하는 방식. 간단한 질문은 빠르게, 복잡한 질문은 깊이 생각해서 답변합니다.
 
 **그런데 이렇게 똑똑해 보이는 AI에도 문제가 있었습니다...**
 
@@ -168,6 +225,30 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 ## 3) LLM의 한계와 할루시네이션
 
 ### LLM의 4가지 한계
+
+다음 내용을 비교표와 함께 시각화:
+
+**LLM의 주요 한계**:
+- **최신성**: 학습 이후의 정보는 모를 수 있음
+  위험도: 중
+  예시: 2024년 선거 결과를 모름
+  
+- **근거/출처**: "그럴듯한 문장"을 만들 수 있음
+  위험도: 높음
+  예시: 존재하지 않는 연구 인용
+  
+- **정확한 수치·규정**: 작은 오류가 큰 문제로 이어짐
+  위험도: 매우 높음
+  예시: 법률 조문 오인용
+  
+- **개인/조직 문서**: 내 자료를 "자동으로" 알지 못함
+  위험도: 중
+  예시: 회사 내부 정책 미반영
+
+**위험도 분포**:
+- 매우 높음: 1개
+- 높음: 1개
+- 중: 2개
 
 | 한계 | 설명 | 위험도 | 예시 |
 |------|------|--------|------|
@@ -180,7 +261,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 **할루시네이션(Hallucination)**은 AI가 실제로 존재하지 않거나 사실과 다른 정보를 생성하는 현상을 의미합니다. ([IBM](https://www.ibm.com/kr-ko/think/topics/ai-hallucinations))
 
-**📌 용어 설명**: **[할루시네이션 (Hallucination)]**: AI가 실제로 존재하지 않거나 잘못된 정보를 만들어내는 현상. 마치 환각을 보는 것처럼 사실이 아닌 내용을 생성합니다.
+**[할루시네이션 (Hallucination)]**: AI가 실제로 존재하지 않거나 잘못된 정보를 만들어내는 현상. 마치 환각을 보는 것처럼 사실이 아닌 내용을 생성합니다.
 
 **발생 원인**:
 * **편향된 학습 데이터**: 대표성이 부족한 데이터로 학습되면 편향이 결과물에 반영
@@ -202,7 +283,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 * AI 모델의 할루시네이션 발생률은 모델과 작업 유형에 따라 다르지만, 법률 문서 작성 시 특히 위험
 * 최신 연구에 따르면 복잡한 추론 작업에서 할루시네이션 발생 가능성이 높음
 
-**📌 용어 설명**: **[추론]**: AI가 정보를 분석하고 결론을 도출하는 과정. 단순히 기억한 것을 말하는 것이 아니라, 논리적으로 생각하는 것.
+**[추론]**: AI가 정보를 분석하고 결론을 도출하는 과정. 단순히 기억한 것을 말하는 것이 아니라, 논리적으로 생각하는 것.
 * RAG 기술 적용 시 할루시네이션 발생률이 크게 감소하는 것으로 보고됨
 
 ### 왜 위험한가?
@@ -241,7 +322,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 **RAG(Retrieval-Augmented Generation)** = "검색(자료 찾기) + 생성(답 만들기)" 결합
 
-**📌 용어 설명**: **[RAG (Retrieval-Augmented Generation)]**: 검색(Retrieval)과 생성(Generation)을 결합한 기술. AI가 답변을 만들기 전에 관련 자료를 먼저 찾아서 근거를 확인합니다.
+**[RAG (Retrieval-Augmented Generation)]**: 검색(Retrieval)과 생성(Generation)을 결합한 기술. AI가 답변을 만들기 전에 관련 자료를 먼저 찾아서 근거를 확인합니다.
 
 **작동 원리**:
 1. **검색 단계**: 사용자 질문과 관련된 문서를 외부 데이터베이스에서 검색
@@ -252,7 +333,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 * LLM = 글 잘 쓰는 사람
 * RAG = 그 사람 옆에 **도서관(검색 시스템)**을 붙인 것
 
-**RAG 개념은 학술적으로도 정리되어 있습니다.** ([arXiv][7])
+**RAG 개념은 학술적으로도 정리되어 있습니다.** (https://arxiv.org/abs/2005.11401)
 
 ### RAG의 효과
 
@@ -293,9 +374,9 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 ### 연구적 기반: ReAct(Reason + Act)
 
-"생각(Reasoning)"과 "행동(Acting)"을 번갈아 수행해 환각을 줄이고 목표를 달성하는 방식이 제안되었습니다. ([arXiv][8])
+"생각(Reasoning)"과 "행동(Acting)"을 번갈아 수행해 환각을 줄이고 목표를 달성하는 방식이 제안되었습니다. (https://arxiv.org/abs/2210.03629)
 
-**📌 용어 설명**: **[ReAct (Reason + Act)]**: 생각(Reason)과 행동(Act)을 번갈아 수행하는 방식. 먼저 생각하고, 행동하고, 결과를 확인한 후 다시 생각하는 과정을 반복합니다.
+**[ReAct (Reason + Act)]**: 생각(Reason)과 행동(Act)을 번갈아 수행하는 방식. 먼저 생각하고, 행동하고, 결과를 확인한 후 다시 생각하는 과정을 반복합니다.
 
 **작동 방식**:
 1. **생각**: 현재 상황 분석 및 다음 행동 계획
@@ -307,9 +388,9 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 | 기업 | 제품/기능 | 주요 특징 | 출처 |
 |------|----------|----------|------|
-| OpenAI | Responses API | 웹검색·파일검색·컴퓨터 사용 등 "내장 도구" 강화 | [OpenAI][2] |
-| Anthropic | Computer use | 컴퓨터 조작 기능 공개 | [Anthropic][9] |
-| Google | Gemini 2.0 | "에이전트 시대" 모델, 도구 사용/멀티모달 출력 | [blog.google][10] |
+| OpenAI | Responses API | 웹검색·파일검색·컴퓨터 사용 등 "내장 도구" 강화 | https://openai.com/index/new-tools-for-building-agents/ |
+| Anthropic | Computer use | 컴퓨터 조작 기능 공개 | https://www.anthropic.com/news/3-5-models-and-computer-use |
+| Google | Gemini 2.0 | "에이전트 시대" 모델, 도구 사용/멀티모달 출력 | https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/ |
 | Meta | Manus 인수 (2025-12) | 자율적 다단계 작업 수행 AI 에이전트, 20억 달러 (약 29조 원) 인수 | [techradar.com](https://www.techradar.com/pro/meta-buys-manus-for-usd2-billion-to-power-high-stakes-ai-agent-race) |
 | Salesforce | Agentforce 360 (2025-11) | AI 에이전트 개발·배포·관리 통합 플랫폼, Slack 통합 | [itpro.com](https://www.itpro.com/technology/artificial-intelligence/salesforce-just-launched-a-new-catch-all-platform-to-build-enterprise-ai-agents) |
 | Microsoft | Agent 365 (2025-11) | AI 에이전트 대규모 배포 지원, 2028년까지 13억 개 에이전트 예상 | [windowscentral.com](https://www.windowscentral.com/microsoft/microsoft-doubles-down-on-agentic-ai-agent-365-prepares-for-a-future-with-over-1-billion-agents) |
@@ -319,18 +400,32 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 | 기술 | 작동 방식 | 장점 | 한계 | 출처 |
 |------|----------|------|------|------|
-| LLM | 다음 단어 예측 | 유창한 텍스트 생성 | 최신성/정확성 부족 | [arXiv][3] |
-| RAG | 검색 + 생성 | 근거 기반 답변 | 검색 품질 의존 | [arXiv][7] |
-| 에이전트 | 도구 사용 + 실행 | 실제 작업 수행 | 복잡성 증가 | [OpenAI][2] |
+| LLM | 다음 단어 예측 | 유창한 텍스트 생성 | 최신성/정확성 부족 | https://arxiv.org/abs/1706.03762 |
+| RAG | 검색 + 생성 | 근거 기반 답변 | 검색 품질 의존 | https://arxiv.org/abs/2005.11401 |
+| 에이전트 | 도구 사용 + 실행 | 실제 작업 수행 | 복잡성 증가 | https://openai.com/index/new-tools-for-building-agents/ |
 
-**📌 용어 설명**: **[에이전트]**: 단순히 답변만 하는 것이 아니라, 도구를 사용하고 실제 작업을 수행하는 AI. 예를 들어 웹 검색, 파일 검색, 컴퓨터 조작 등을 할 수 있습니다.
+**[에이전트]**: 단순히 답변만 하는 것이 아니라, 도구를 사용하고 실제 작업을 수행하는 AI. 예를 들어 웹 검색, 파일 검색, 컴퓨터 조작 등을 할 수 있습니다.
 
 ### 2026년 AI 에이전트 시장 전망
 
+**AI 에이전트 시장 성장 추이**
+
+다음 데이터를 선 그래프로 시각화:
+
 **시장 규모**:
-* 2025년: 53억 2천만 달러 (약 77조 1,400억 원)
-* 2030년: 427억 달러 (약 619조 1,500억 원, 연평균 성장률 41.5%)
-* 2028년까지: 13억 개 이상의 AI 에이전트 사용 예상
+- 2025년: 53억 2천만 달러 (약 77조 1,400억 원)
+- 2026년: (예상) 75억 달러
+- 2027년: (예상) 106억 달러
+- 2028년: (예상) 150억 달러 (13억 개 이상의 AI 에이전트 사용 예상)
+- 2029년: (예상) 212억 달러
+- 2030년: 427억 달러 (약 619조 1,500억 원)
+
+**연평균 성장률**: 41.5%
+
+**주요 특징**:
+- 2025년: 초기 상용화 단계
+- 2030년: 산업 표준 도구로 확산
+- 2028년까지: 13억 개 이상의 AI 에이전트 사용 예상
 
 **에이전틱 AI의 확산**:
 * 포춘 500대 기업의 고객 상호작용 중 **25% 이상이 에이전틱 시스템에 의해 자율 처리**될 전망 (2026년 말까지)
@@ -343,7 +438,6 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 * 크로스채널 '슈퍼 에이전트'의 등장
 * 하이퍼 퍼스널라이제이션: 사용자 맞춤형 경험 제공
 
-**📌 용어 설명**:
 * **[에이전틱 AI]**: 여러 AI 에이전트가 자율적으로 작업을 수행하는 시스템. 사람의 개입 없이 복잡한 업무를 처리합니다.
 * **[멀티 에이전트 시스템]**: 여러 AI 에이전트가 협력하여 하나의 복잡한 작업을 수행하는 시스템. 각 에이전트가 다른 역할을 담당합니다.
 * **[워크플로우]**: 작업을 수행하는 순서와 과정. 예를 들어 "자료 찾기 → 정리하기 → 보고서 작성하기" 같은 단계별 흐름.
@@ -360,7 +454,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 **피지컬 AI(Physical AI)**는 AI가 물리적 실체 안에 구현되어 현실 세계와 상호작용하는 시스템입니다. ([spri.kr](https://spri.kr/download/23676))
 
-**📌 용어 설명**: **[피지컬 AI (Physical AI)]**: 물리적 실체(로봇, 자율주행차 등)에 구현되어 현실 세계와 직접 상호작용하는 AI 시스템.
+**[피지컬 AI (Physical AI)]**: 물리적 실체(로봇, 자율주행차 등)에 구현되어 현실 세계와 직접 상호작용하는 AI 시스템.
 
 **핵심 요소**:
 * AI, 모터, 센서, 스피커, 제어 보드 등 하드웨어 융합 기술
@@ -373,7 +467,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 **2026년 CES**: 2026년 1월 6일부터 9일까지 미국 라스베이거스에서 열리는 CES 2026에서는 AI PC, 엣지 컴퓨팅, 로보틱스, 모빌리티 등이 주요 주제로 다뤄질 예정입니다. 이는 AI의 물리적 내장화와 관련된 최신 기술 동향을 파악할 수 있는 기회입니다. ([slexn.com](https://www.slexn.com/2025-2026-year-domestic-international-ai-it-conference/))
 
-**📌 용어 설명**: **[엣지 컴퓨팅]**: 데이터를 클라우드로 보내지 않고 현장(엣지)에서 바로 처리하는 기술. 빠른 반응이 필요한 경우에 사용됩니다.
+**[엣지 컴퓨팅]**: 데이터를 클라우드로 보내지 않고 현장(엣지)에서 바로 처리하는 기술. 빠른 반응이 필요한 경우에 사용됩니다.
 
 ### 피지컬 AI 사례
 
@@ -412,7 +506,6 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 
 **월드모델(World Model)**은 AI가 물리적 세계의 동작을 내부적으로 모델링하여 예측하고 시뮬레이션할 수 있게 하는 신경망입니다. ([mezzaninex.tistory.com](https://mezzaninex.tistory.com/m/7996))
 
-**📌 용어 설명**:
 * **[월드모델 (World Model)]**: AI가 물리적 세계의 동작을 내부적으로 모델링하여 예측하고 시뮬레이션할 수 있게 하는 신경망. AI가 "만약 이렇게 하면 어떻게 될까?"를 미리 예측할 수 있게 합니다.
 * **[신경망]**: 사람의 뇌 신경 구조를 모방한 AI 학습 구조. 여러 층의 노드들이 연결되어 패턴을 학습합니다.
 
@@ -429,7 +522,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 | **능력** | 언어 생성, 대화 | 행동 예측, 물리적 세계 이해 |
 | **활용 분야** | 문서 작성, 번역 | 로봇 제어, 자율주행, AR/VR |
 
-**📌 용어 설명**: **[AR/VR]**: AR(증강현실)은 실제 환경에 가상 정보를 겹쳐 보여주는 기술, VR(가상현실)은 완전히 가상의 환경을 만드는 기술.
+**[AR/VR]**: AR(증강현실)은 실제 환경에 가상 정보를 겹쳐 보여주는 기술, VR(가상현실)은 완전히 가상의 환경을 만드는 기술.
 
 ### 얀 르쿤의 전망: "LLM은 5년 안에 구식"
 
@@ -448,7 +541,7 @@ AI는 '사실을 아는 사람'이라기보다 **"문장을 아주 잘 이어 �
 | **AR/VR** | 가상 환경에서의 물리 법칙 시뮬레이션 | 현실감 있는 가상 경험 제공 | [mezzaninex.tistory.com](https://mezzaninex.tistory.com/m/7996) |
 | **시뮬레이션 기반 학습** | 다양한 시나리오에서의 학습 | 실제 환경에서의 위험 없이 학습 | [mezzaninex.tistory.com](https://mezzaninex.tistory.com/m/7996) |
 
-**📌 용어 설명**: **[시뮬레이션]**: 실제 환경을 모방한 가상 환경. 실제로 위험하거나 비용이 많이 드는 상황을 가상으로 만들어 연습할 수 있습니다.
+**[시뮬레이션]**: 실제 환경을 모방한 가상 환경. 실제로 위험하거나 비용이 많이 드는 상황을 가상으로 만들어 연습할 수 있습니다.
 
 ### 최신 사례: World Labs의 'Marble'
 
@@ -459,7 +552,6 @@ Fei-Fei Li의 World Labs는 'Marble'이라는 상용 월드모델 제품을 공�
 * Gaussian splat, 메시(mesh), 비디오 등으로 출력 가능
 * 공간지능(spatial intelligence) 분야에서 주목받고 있음
 
-**📌 용어 설명**:
 * **[Gaussian splat]**: 3D 공간을 표현하는 기술 중 하나. 점들을 모아서 3D 객체를 표현합니다.
 * **[메시 (Mesh)]**: 3D 객체를 표현하는 방법. 삼각형이나 사각형 면들을 연결하여 3D 형태를 만듭니다.
 * **[공간지능 (Spatial Intelligence)]**: 공간의 구조와 관계를 이해하는 능력. 예를 들어 방의 구조를 파악하고 물건의 위치를 이해하는 것.
@@ -480,7 +572,6 @@ Fei-Fei Li의 World Labs는 'Marble'이라는 상용 월드모델 제품을 공�
 * AI가 실제 환경에서의 위험 없이 다양한 상황을 경험하고 학습
 * 강화 학습에서 중요한 역할을 하며, AI 에이전트가 다양한 상황에서 학습하고 적응할 수 있게 함
 
-**📌 용어 설명**:
 * **[메타 환경 (Meta Environment)]**: AI가 학습하고 작동하는 가상의 환경. 실제 세계에서 위험하거나 비용이 많이 드는 상황을 가상으로 만들어 AI를 훈련시킵니다.
 * **[VR (Virtual Reality / 가상현실)]**: 완전히 가상의 3D 환경을 만드는 기술. 사용자가 그 안에 들어가 있는 것처럼 느끼게 합니다.
 * **[AR (Augmented Reality / 증강현실)]**: 실제 환경에 가상 정보를 겹쳐 보여주는 기술. 예를 들어 스마트폰으로 건물을 비추면 건물 정보가 화면에 표시되는 것.
@@ -499,7 +590,7 @@ Fei-Fei Li의 World Labs는 'Marble'이라는 상용 월드모델 제품을 공�
 
 메타는 차세대 월드모델인 **V-JEPA 2**를 개발하고 있습니다. ([heisenberg.kr](https://heisenberg.kr/worldmodel_dion/))
 
-**📌 용어 설명**: **[V-JEPA 2]**: 메타가 개발 중인 차세대 월드모델. 비디오를 통해 물리적 세계를 이해하고 예측하는 AI 시스템.
+**[V-JEPA 2]**: 메타가 개발 중인 차세대 월드모델. 비디오를 통해 물리적 세계를 이해하고 예측하는 AI 시스템.
 
 **주요 특징**:
 * 로봇이 처음 보는 상황에서도 스스로 판단하고 행동할 수 있도록 지원
@@ -521,7 +612,7 @@ Fei-Fei Li의 World Labs는 'Marble'이라는 상용 월드모델 제품을 공�
 * 비즈니스, 마케팅, 교육, 쇼핑, 엔터테인먼트 등 다양한 산업에서 새로운 기회 창출
 * 2025년을 기점으로 메타버스 활용법이 더욱 다양해질 전망 ([lunaandstella.tistory.com](https://lunaandstella.tistory.com/entry/2025-%EB%A9%94%ED%83%80%EB%B2%84%EC%8A%A4-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%99%9C%EC%9A%A9%EB%B2%95-%EB%AF%B8%EB%9E%98-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C))
 
-**📌 용어 설명**: **[메타버스]**: 가상세계와 현실이 결합된 3차원 디지털 공간. 사람들이 아바타로 모여 소통하고 활동할 수 있는 가상 세계.
+**[메타버스]**: 가상세계와 현실이 결합된 3차원 디지털 공간. 사람들이 아바타로 모여 소통하고 활동할 수 있는 가상 세계.
 
 **이런 기술 발전이 우리 사회와 경제에 어떤 영향을 미치고 있을까요?**
 
@@ -533,7 +624,7 @@ Fei-Fei Li의 World Labs는 'Marble'이라는 상용 월드모델 제품을 공�
 
 **AI 헤게모니**는 AI 기술 주도권을 둘러싼 국가 간 경쟁을 의미합니다. 기술을 선도하는 국가와 기업이 경제적 우위를 점하게 되며, 이는 국제 경제 질서에 큰 변화를 가져옵니다.
 
-**📌 용어 설명**: **[헤게모니 (Hegemony)]**: 특정 국가나 집단이 다른 국가나 집단보다 우위를 점하여 지배하는 상태. AI 분야에서는 기술 주도권을 의미합니다.
+**[헤게모니 (Hegemony)]**: 특정 국가나 집단이 다른 국가나 집단보다 우위를 점하여 지배하는 상태. AI 분야에서는 기술 주도권을 의미합니다.
 
 **AI 헤게모니의 주요 요소**:
 
@@ -550,14 +641,31 @@ Fei-Fei Li의 World Labs는 'Marble'이라는 상용 월드모델 제품을 공�
 
 Stanford AI Index 2025의 핵심 수치(2024년 기준):
 
+**국가별 AI 투자 비교 (2024년 기준)**
+
+다음 데이터를 막대 그래프로 시각화:
+
+**국가별 AI 투자 규모**:
+- **미국**: 1,091억 달러 (약 1,581조 9,500억 원)
+  전략: 기술 선도, 인재 양성
+  
+- **중국**: 93억 달러 (약 134조 8,500억 원)
+  전략: 자체 기술 개발, 규제
+  
+- **영국**: 45억 달러 (약 65조 2,500억 원)
+  전략: 연구 중심, 윤리 강조
+  
+- **한국**: 10조 1,000억 원 (2026년 예산)
+  전략: AI 대전환 핵심 국정 과제, 피지컬 AI 얼라이언스
+
 | 국가/지역 | 2024년 AI 투자 | 전년 대비 | 전략 | 출처 |
 |----------|--------------|----------|------|------|
-| 미국 | 1,091억 달러 (약 1,581조 9,500억 원) | - | 기술 선도, 인재 양성 | [Stanford HAI][1] |
-| 중국 | 93억 달러 (약 134조 8,500억 원) | - | 자체 기술 개발, 규제 | [Stanford HAI][1] |
-| 영국 | 45억 달러 (약 65조 2,500억 원) | - | 연구 중심, 윤리 강조 | [Stanford HAI][1] |
+| 미국 | 1,091억 달러 (약 1,581조 9,500억 원) | - | 기술 선도, 인재 양성 | https://hai.stanford.edu/ai-index/2025-ai-index-report |
+| 중국 | 93억 달러 (약 134조 8,500억 원) | - | 자체 기술 개발, 규제 | https://hai.stanford.edu/ai-index/2025-ai-index-report |
+| 영국 | 45억 달러 (약 65조 2,500억 원) | - | 연구 중심, 윤리 강조 | https://hai.stanford.edu/ai-index/2025-ai-index-report |
 | 한국 | 2026년 예산 10조 1,000억 원 | - | AI 대전환 핵심 국정 과제, 피지컬 AI 얼라이언스 | [seo.goover.ai](https://seo.goover.ai/report/202509/go-public-report-ko-2940c2f7-62fe-4221-84f6-6961813e0742-0-0.html) |
 
-**전 세계 생성형 AI 민간 투자 339억 달러 (약 491조 5,500억 원)**, 전년 대비 +18.7% ([Stanford HAI][1])
+**전 세계 생성형 AI 민간 투자 339억 달러 (약 491조 5,500억 원)**, 전년 대비 +18.7% (https://hai.stanford.edu/ai-index/2025-ai-index-report)
 
 **AI 에이전트 시장 전망**:
 * 2025년: 53억 2천만 달러 (약 77조 1,400억 원)
@@ -568,10 +676,10 @@ Stanford AI Index 2025의 핵심 수치(2024년 기준):
 
 | 산업 | 활용 사례 | 사용률 | 출처 |
 |------|----------|--------|------|
-| 의료 | FDA 승인 AI 의료기기 223개 (2023), 2015년 6개에서 크게 증가 | - | [Stanford HAI][1] |
-| 자율주행 | 주간 수십만 회 규모의 탑승 | - | [Stanford HAI][1] |
+| 의료 | FDA 승인 AI 의료기기 223개 (2023), 2015년 6개에서 크게 증가 | - | https://hai.stanford.edu/ai-index/2025-ai-index-report |
+| 자율주행 | 주간 수십만 회 규모의 탑승 | - | https://hai.stanford.edu/ai-index/2025-ai-index-report |
 | 제조업 | 피지컬 AI 기반 자동화 | - | [chosun.com](https://www.chosun.com/national/weekend/2025/02/08/ZW5FIRDCPBCT3CIPR3C33IRBQI/) |
-| 조직 전반 | 조직의 AI 사용률 78% (2024), 전년 55%에서 급증 | 78% | [Stanford HAI][1] |
+| 조직 전반 | 조직의 AI 사용률 78% (2024), 전년 55%에서 급증 | 78% | https://hai.stanford.edu/ai-index/2025-ai-index-report |
 
 ### 경제 영향 분석
 
@@ -581,7 +689,7 @@ Stanford AI Index 2025의 핵심 수치(2024년 기준):
 |----------|----------|------------|--------|------|
 | **노동 시장** | 일자리 구조 변화 | 자동화로 인한 일부 직업 감소, 새로운 직업 창출 (AI 엔지니어, 프롬프트 엔지니어 등) | 높음 | - |
 
-**📌 용어 설명**: **[프롬프트 엔지니어]**: AI에게 효과적인 지시를 내리는 전문가. AI가 원하는 결과를 얻기 위해 질문이나 지시를 설계하는 사람.
+**[프롬프트 엔지니어]**: AI에게 효과적인 지시를 내리는 전문가. AI가 원하는 결과를 얻기 위해 질문이나 지시를 설계하는 사람.
 | **무역 구조** | 기술 기반 무역 확대 | AI 기술 수출입 증가, AI 서비스 무역 확대 | 중 | - |
 | **산업 경쟁력** | 기술 선도 기업 우위 | AI 기반 제품/서비스 경쟁력, 생산성 향상 | 매우 높음 | - |
 | **경제 성장** | AI 기여도 증가 | AI가 GDP 성장에 기여하는 비중 확대 | 높음 | - |
@@ -593,7 +701,7 @@ AI 기술의 발전은 단순히 기술적 변화를 넘어 경제 구조 자체
 **2026년 AI 트렌드**:
 * AI 인프라 패권 경쟁 심화: AI 인프라를 둘러싼 글로벌 경쟁이 더욱 치열해짐 ([v.daum.net](https://v.daum.net/v/20251231103004847))
 
-**📌 용어 설명**: **[인프라스트럭처 (Infrastructure)]**: AI가 작동하기 위해 필요한 기반 시설. 데이터센터, 네트워크, 서버 등이 포함됩니다.
+**[인프라스트럭처 (Infrastructure)]**: AI가 작동하기 위해 필요한 기반 시설. 데이터센터, 네트워크, 서버 등이 포함됩니다.
 * 피지컬 AI 혁신: 산업 현장에서 AI의 물리적 적용이 확대되며 제조업 등 다양한 분야에서 혁신 진행 ([v.daum.net](https://v.daum.net/v/20251231103004847))
 * AI 에이전트의 발전: 스스로 작업을 수행하는 AI 에이전트의 발전과 협업 및 자동화의 미래 ([v.daum.net](https://v.daum.net/v/20251231103004847))
 * 에이전틱 AI 확산: 포춘 500대 기업의 고객 상호작용 중 25% 이상이 자율 처리될 전망
@@ -602,10 +710,22 @@ AI 기술의 발전은 단순히 기술적 변화를 넘어 경제 구조 자체
 
 ### 왜 이렇게 빨라졌나: "가격"이 내려갔다
 
-* GPT-3.5 수준 성능의 **추론 비용이 2022-11 → 2024-10 사이 280배 이상 하락** ([Stanford HAI][1])
+**AI 추론 비용 하락 추이**
 
-**📌 용어 설명**: **[추론 비용]**: AI가 질문에 답변하기 위해 사용하는 컴퓨팅 비용. AI가 생각하는 데 드는 비용이라고 이해하면 됩니다.
-* 하드웨어 비용은 연 30% 하락, 에너지 효율은 매년 40% 개선(보고서 요약) ([Stanford HAI][1])
+다음 데이터를 선 그래프로 시각화:
+
+**추론 비용 변화**:
+- 2022년 11월: 기준점 (100%)
+- 2024년 10월: 280배 이상 하락 (약 0.36% 수준)
+
+**[추론 비용]**: AI가 질문에 답변하기 위해 사용하는 컴퓨팅 비용. AI가 생각하는 데 드는 비용이라고 이해하면 됩니다.
+
+**하드웨어 비용 및 효율 개선**:
+- 하드웨어 비용: 연 30% 하락
+- 에너지 효율: 매년 40% 개선
+
+* GPT-3.5 수준 성능의 **추론 비용이 2022-11 → 2024-10 사이 280배 이상 하락** (https://hai.stanford.edu/ai-index/2025-ai-index-report)
+* 하드웨어 비용은 연 30% 하락, 에너지 효율은 매년 40% 개선(보고서 요약) (https://hai.stanford.edu/ai-index/2025-ai-index-report)
 
 **의미**: "큰 회사만 쓰는 AI"에서 → **개인/중소조직도 쓰는 AI**로 이동.
 
@@ -626,21 +746,20 @@ AI 기술의 발전은 단순히 기술적 변화를 넘어 경제 구조 자체
 
 #### 사용할 공개 데이터(공식)
 
-* UN Comtrade: 국가별 무역 통계(1962년~) ([comtrade.un.org][13])
-* FAOSTAT: 농업/식량 통계(1961년~) ([FAOHome][14])
-* World Bank Commodity Markets("Pink Sheet" 등): 월별/분기별 가격 데이터 ([세계은행][15])
+* UN Comtrade: 국가별 무역 통계(1962년~) (https://comtrade.un.org/)
+* FAOSTAT: 농업/식량 통계(1961년~) (https://www.fao.org/statistics/en)
+* World Bank Commodity Markets("Pink Sheet" 등): 월별/분기별 가격 데이터 (https://www.worldbank.org/en/research/commodity-markets)
 
 #### 작업 흐름(에이전트식 6단계)
 
 1. **범위 정의**: "곡물 원자재(HS 코드/품목 정의), 기간, 대상국"
 
-**📌 용어 설명**: **[HS 코드]**: 국제 무역에서 상품을 분류하는 표준 코드. 각 상품에 고유 번호를 부여하여 통관과 통계를 관리합니다.
+**[HS 코드]**: 국제 무역에서 상품을 분류하는 표준 코드. 각 상품에 고유 번호를 부여하여 통관과 통계를 관리합니다.
 2. **데이터 수집**: Comtrade·FAOSTAT·World Bank에서 표/리포트 확보
 3. **정리**: 상위 수출국/수입국 TOP10, 증감률, 집중도
 4. **해석**: 공급 리스크(기후), 물류 리스크(항만/운임), 정책 리스크(수입 규제)
 5. **전략 옵션**: 소싱 다변화, 재고 정책, 계약 조건(인코텀즈), 환헤지
 
-**📌 용어 설명**:
 * **[인코텀즈 (Incoterms)]**: 국제 무역에서 매도인과 매수인의 책임과 비용을 규정하는 국제 규칙. 예를 들어 운송비, 보험료, 위험 부담 등을 누가 책임지는지 정합니다.
 * **[환헤지 (Hedge)]**: 환율 변동으로 인한 손실을 방지하기 위한 금융 기법. 미래의 환율 변동 위험을 줄이기 위해 선물 거래 등을 하는 것.
 * **[소싱 다변화]**: 한 곳에서만 물건을 구매하지 않고 여러 곳에서 구매하는 전략. 한 공급처에 문제가 생겨도 다른 곳에서 구매할 수 있게 합니다.
@@ -705,7 +824,7 @@ AI 기술의 발전은 단순히 기술적 변화를 넘어 경제 구조 자체
 * 복잡한 내용을 "한 장 그림"으로 정리
 * 예: "AI의 진화(LLM→RAG→Agent)", "안전 사용 수칙 10가지"
 
-Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이전트 시대"를 전제로 소개되었습니다. ([blog.google][10])
+Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이전트 시대"를 전제로 소개되었습니다. (https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/)
 
 #### 인포그래픽 주제 추천(강의 자료용)
 
@@ -736,8 +855,8 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 ### 한 장 요약: "무슨 일을 하시나요?"
 
 * **정리/작성/대화형 코칭** → ChatGPT / Claude
-* **구글 생태계(문서·메일·지도·검색) 결합** → Gemini ([blog.google][10])
-* **출처 달린 리서치/탐색** → Perplexity Deep Research ([Perplexity AI][16])
+* **구글 생태계(문서·메일·지도·검색) 결합** → Gemini (https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/)
+* **출처 달린 리서치/탐색** → Perplexity Deep Research (https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research)
 
 ---
 
@@ -745,21 +864,21 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 | AI | 강점 | 약점 | 추천 용도 | 출처 |
 |----|------|------|----------|------|
-| ChatGPT | 다목적, 도구 사용 | 최신성 제한 | 보고서 초안, 브레인스토밍 | [OpenAI][4] |
-| Claude | 긴 글, 추론 | 웹 검색 제한 | 문서 요약, 정책 비교 | [Anthropic][18] |
-| Gemini | 구글 생태계, 멀티모달 | 텍스트 생성 제한 | 인포그래픽, 구글 워크스페이스 | [blog.google][10] |
-| Perplexity | 출처 중심 리서치 | 창의성 제한 | 조사, 정책 분석 | [Perplexity AI][16] |
+| ChatGPT | 다목적, 도구 사용 | 최신성 제한 | 보고서 초안, 브레인스토밍 | https://openai.com/index/chatgpt/ |
+| Claude | 긴 글, 추론 | 웹 검색 제한 | 문서 요약, 정책 비교 | https://www.anthropic.com/news/claude-4 |
+| Gemini | 구글 생태계, 멀티모달 | 텍스트 생성 제한 | 인포그래픽, 구글 워크스페이스 | https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/ |
+| Perplexity | 출처 중심 리서치 | 창의성 제한 | 조사, 정책 분석 | https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research |
 
-**📌 용어 설명**: **[SOTA (State of the Art)]**: 현재 가장 최신이고 뛰어난 기술 수준. "최첨단"이라는 의미입니다.
+**[SOTA (State of the Art)]**: 현재 가장 최신이고 뛰어난 기술 수준. "최첨단"이라는 의미입니다.
 
 ---
 
 ### ChatGPT 계열: "다목적 비서 + 도구형 에이전트"
 
-* ChatGPT는 대화 UI로 대중화된 대표 사례 ([OpenAI][4])
-* GPT-4o: 텍스트/음성/이미지를 실시간으로 다루는 멀티모달 모델로 소개 ([OpenAI][5])
-* 2025: "에이전트 제작 도구(Responses API, 웹검색/파일검색/컴퓨터 사용)" 공식 발표 ([OpenAI][2])
-* 2025 하반기: GPT-5 공개 ([OpenAI][6])
+* ChatGPT는 대화 UI로 대중화된 대표 사례 (https://openai.com/index/chatgpt/)
+* GPT-4o: 텍스트/음성/이미지를 실시간으로 다루는 멀티모달 모델로 소개 (https://openai.com/index/hello-gpt-4o/)
+* 2025: "에이전트 제작 도구(Responses API, 웹검색/파일검색/컴퓨터 사용)" 공식 발표 (https://openai.com/index/new-tools-for-building-agents/)
+* 2025 하반기: GPT-5 공개 (https://openai.com/index/introducing-gpt-5/)
 * 2026: AI가 업무 수행 주체로 전환, AI 에이전트 확산 ([v.daum.net](https://v.daum.net/v/20251231103004847))
 
 **잘 쓰는 자리**
@@ -776,12 +895,12 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 ### Claude 계열(Anthropic): "긴 글·추론·업무형 에이전트 강점"
 
-* Computer use(컴퓨터 사용) 연구/제품화 방향을 지속 공개 ([Anthropic][17])
-* Claude 4(Opus 4, Sonnet 4): "하이브리드(빠른 응답/확장 추론) 모델"로 소개 ([Anthropic][18])
-* 2025-11: Opus 4.5도 공식 발표(코딩·에이전트·컴퓨터 사용 강조) ([Anthropic][19])
-* 프롬프트 인젝션(숨은 지시문 공격) 방어 연구 공개 ([Anthropic][12])
+* Computer use(컴퓨터 사용) 연구/제품화 방향을 지속 공개 (https://www.anthropic.com/news/developing-computer-use)
+* Claude 4(Opus 4, Sonnet 4): "하이브리드(빠른 응답/확장 추론) 모델"로 소개 (https://www.anthropic.com/news/claude-4)
+* 2025-11: Opus 4.5도 공식 발표(코딩·에이전트·컴퓨터 사용 강조) (https://www.anthropic.com/news/claude-opus-4-5)
+* 프롬프트 인젝션(숨은 지시문 공격) 방어 연구 공개 (https://www.anthropic.com/research/prompt-injection-defenses)
 
-**📌 용어 설명**: **[프롬프트 인젝션 (Prompt Injection)]**: 악의적으로 AI를 조작하기 위해 숨겨진 지시문을 입력하는 공격 방법. 웹페이지나 문서에 숨겨진 지시문을 넣어 AI를 조작할 수 있습니다.
+**[프롬프트 인젝션 (Prompt Injection)]**: 악의적으로 AI를 조작하기 위해 숨겨진 지시문을 입력하는 공격 방법. 웹페이지나 문서에 숨겨진 지시문을 넣어 AI를 조작할 수 있습니다.
 
 **잘 쓰는 자리**
 
@@ -797,7 +916,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 ### Gemini 계열(Google): "검색/지도/워크스페이스 결합 + 멀티모달 출력"
 
-* Gemini 2.0: "에이전트 시대"를 위한 모델로 공식 소개(도구 사용, 이미지/오디오 출력) ([blog.google][10])
+* Gemini 2.0: "에이전트 시대"를 위한 모델로 공식 소개(도구 사용, 이미지/오디오 출력) (https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/)
 
 **잘 쓰는 자리**
 
@@ -812,7 +931,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 ### Perplexity: "검색+출처 중심 리서치"
 
-* Deep Research: 질문 한 번에 다수 검색·자료 읽기·보고서 작성 방식으로 소개 ([Perplexity AI][16])
+* Deep Research: 질문 한 번에 다수 검색·자료 읽기·보고서 작성 방식으로 소개 (https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research)
 
 **잘 쓰는 자리**
 
@@ -845,7 +964,6 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 * 에이전트 상거래(Agentic Commerce): 2030년까지 미국 B2C 소매 시장에서 AI 에이전트 주도 거래가 최대 1조 달러 (약 1,450조 원) 규모 예상
 * 디지털 인프라 수요 급증: 2026-2036년 사이 AI 에이전트 수가 100배 이상 증가하여 수조 개에 달할 전망
 
-**📌 용어 설명**:
 * **[에이전트 상거래 (Agentic Commerce)]**: AI 에이전트가 소비자를 대신하여 구매 결정을 자동화하는 상거래 형태. AI가 사용자의 취향을 학습하여 자동으로 쇼핑을 도와줍니다.
 * **[인프라스트럭처 (Infrastructure)]**: AI가 작동하기 위해 필요한 기반 시설. 데이터센터, 네트워크, 서버 등이 포함됩니다.
 
@@ -855,7 +973,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 ### AI 리터러시가 법/제도에도 들어오고 있습니다
 
-**📌 용어 설명**: **[AI 리터러시]**: AI를 이해하고 효과적으로 활용할 수 있는 능력. AI 시대에 필요한 기본 소양입니다.
+**[AI 리터러시]**: AI를 이해하고 효과적으로 활용할 수 있는 능력. AI 시대에 필요한 기본 소양입니다.
 
 **EU AI Act** (공식 EU 페이지)의 적용 타임라인:
 
@@ -865,7 +983,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 | 2025-02-02 | 금지 행위 및 AI 리터러시 의무 적용 | 예외 조항 적용 시작 |
 | 2025-08-02 | GPAI(범용 AI) 모델 의무 적용 | 범용 AI 모델 규제 시작 |
 
-**📌 용어 설명**: **[GPAI (General Purpose AI / 범용 AI)]**: 특정 작업에만 특화되지 않고 다양한 작업을 수행할 수 있는 AI 모델. ChatGPT, Claude 등이 대표적입니다.
+**[GPAI (General Purpose AI / 범용 AI)]**: 특정 작업에만 특화되지 않고 다양한 작업을 수행할 수 있는 AI 모델. ChatGPT, Claude 등이 대표적입니다.
 | 2026-08-02 | 전면 적용 | 모든 조항 전면 적용 |
 
 **한국 AI 기본법** (2026년 1월 22일 시행):
@@ -874,10 +992,10 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 |----------|------|------|
 | AI 생성물 워터마크 의무화 | AI로 생성된 콘텐츠에 표시 의무 | [wikidocs.net](https://wikidocs.net/blog/%40daje0601/6154/) |
 
-**📌 용어 설명**: **[워터마크]**: AI가 만든 콘텐츠에 표시하는 특별한 표시. AI로 생성된 것임을 알 수 있게 하는 기술.
+**[워터마크]**: AI가 만든 콘텐츠에 표시하는 특별한 표시. AI로 생성된 것임을 알 수 있게 하는 기술.
 | 구체적 가이드라인 미확정 | 산업계 우려, 시행령 보완 필요 | [wikidocs.net](https://wikidocs.net/blog/%40daje0601/6154/) |
 
-**의미**: 앞으로 조직/기관에서 "AI를 쓸 줄 아는 능력"이 **교육·보안·윤리**와 함께 요구될 가능성이 큽니다. ([디지털 전략][20])
+**의미**: 앞으로 조직/기관에서 "AI를 쓸 줄 아는 능력"이 **교육·보안·윤리**와 함께 요구될 가능성이 큽니다. (https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 
 ---
 
@@ -910,7 +1028,6 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 | **대규모 BEC 공격** | AI를 활용한 비즈니스 이메일 침해 | 높음 | 이메일 보안 강화, 다단계 인증 |
 | **프롬프트 인젝션** | 웹페이지/문서 속 숨은 지시로 AI 조작 | 높음 | AI 입력 데이터 검증 강화 |
 
-**📌 용어 설명**:
 * **[BEC (Business Email Compromise)]**: 비즈니스 이메일을 이용한 사기 공격. 경영진을 사칭하여 금융 거래를 요구하는 공격입니다.
 * **[딥페이크 (Deepfake)]**: AI를 사용하여 실제 사람의 얼굴이나 목소리를 합성한 가짜 영상이나 음성. 실제가 아닌 것처럼 보이게 만든 것입니다.
 * **[보이스피싱 (Voice Phishing)]**: AI로 생성된 가짜 음성을 사용하여 피싱 공격을 하는 것. 친숙한 사람의 목소리로 위장하여 개인정보나 돈을 요구합니다.
@@ -931,7 +1048,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 * 엄격한 데이터 거버넌스와 지속적인 모니터링 필요
 * AI 에이전트의 행동에 대한 감사(audit) 체계 구축
 
-**📌 용어 설명**: **[감사 (Audit)]**: 시스템이나 프로세스를 검토하고 평가하는 것. AI 에이전트의 행동을 기록하고 검토하여 문제를 발견하고 개선합니다.
+**[감사 (Audit)]**: 시스템이나 프로세스를 검토하고 평가하는 것. AI 에이전트의 행동을 기록하고 검토하여 문제를 발견하고 개선합니다.
 
 ---
 
@@ -939,11 +1056,10 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 | 프레임워크 | 설명 | 특징 | 출처 |
 |----------|------|------|------|
-| NIST AI RMF 1.0 | AI 위험을 관리하기 위한 프레임워크 | 자율적 활용 | [NIST Technical Series][21] |
-| OECD AI Principles | 신뢰할 수 있는 AI 원칙 | 2019 채택 | [OECD][22] |
-| ISO/IEC 42001 | 조직의 AI 관리체계(거버넌스/리스크) 표준 | 국제 표준 | [ISO][23] |
+| NIST AI RMF 1.0 | AI 위험을 관리하기 위한 프레임워크 | 자율적 활용 | https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf |
+| OECD AI Principles | 신뢰할 수 있는 AI 원칙 | 2019 채택 | https://www.oecd.org/en/topics/ai-principles.html |
+| ISO/IEC 42001 | 조직의 AI 관리체계(거버넌스/리스크) 표준 | 국제 표준 | https://www.iso.org/standard/42001 |
 
-**📌 용어 설명**:
 * **[거버넌스 (Governance)]**: 조직이나 시스템을 관리하고 통제하는 체계. AI의 안전하고 윤리적인 사용을 위한 관리 체계를 의미합니다.
 * **[NIST AI RMF]**: 미국 국립표준기술원(NIST)이 만든 AI 위험 관리 프레임워크. AI의 위험을 평가하고 관리하는 방법을 제시합니다.
 * **[OECD AI Principles]**: 경제협력개발기구(OECD)가 제정한 AI 원칙. AI가 인간 중심적이고 공정하며 투명하게 개발되어야 한다는 원칙입니다.
@@ -957,7 +1073,27 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 
 ### AI 에이전트 시장의 폭발적 성장
 
+**AI 에이전트 시장 성장 추이 (2025-2030)**
+
+다음 데이터를 선 그래프로 시각화:
+
 **시장 규모 전망**:
+- **2025년**: 53억 2천만 달러 (약 77조 1,400억 원)
+  특징: 초기 상용화 단계
+  
+- **2026년**: (예상) 75억 달러
+  
+- **2027년**: (예상) 106억 달러
+  
+- **2028년**: (예상) 150억 달러
+  특징: 13억 개 이상의 AI 에이전트 사용 예상
+  
+- **2029년**: (예상) 212억 달러
+  
+- **2030년**: 427억 달러 (약 619조 1,500억 원)
+  특징: 산업 표준 도구로 확산
+
+**연평균 성장률**: 41.5%
 
 | 연도 | 시장 규모 | 성장률 | 주요 특징 |
 |------|----------|--------|----------|
@@ -965,13 +1101,21 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 | 2030 | 427억 달러 (약 619조 1,500억 원) | 연평균 41.5% | 산업 표준 도구로 확산 |
 | 2028 | - | - | 13억 개 이상의 AI 에이전트 사용 예상 |
 
+**에이전트 상거래(Agentic Commerce) 전망**
+
+다음 데이터를 막대 그래프로 시각화:
+
+**2030년 미국 B2C 소매 시장 예상**:
+- AI 에이전트 주도 거래 규모: 최대 1조 달러 (약 1,450조 원)
+- AI 에이전트가 소비자의 구매 결정을 자동화하고 개인화된 쇼핑 경험 제공
+
 **에이전트 상거래(Agentic Commerce) 전망**:
 * 2030년까지 미국 B2C 소매 시장에서 AI 에이전트가 주도하는 거래 규모가 **최대 1조 달러 (약 1,450조 원)**에 이를 것으로 예상
 * AI 에이전트가 소비자의 구매 결정을 자동화하고 개인화된 쇼핑 경험 제공
 
 ### AGI(인공일반지능) 타임라인 전망
 
-**📌 용어 설명**: **[AGI (Artificial General Intelligence / 인공일반지능)]**: 인간 수준의 일반 지능을 가진 AI. 특정 작업에만 특화된 것이 아니라, 인간처럼 다양한 작업을 수행할 수 있는 AI입니다.
+**[AGI (Artificial General Intelligence / 인공일반지능)]**: 인간 수준의 일반 지능을 가진 AI. 특정 작업에만 특화된 것이 아니라, 인간처럼 다양한 작업을 수행할 수 있는 AI입니다.
 
 **전문가들의 예측**:
 * AGI 도래 시기에 대한 전문가 의견은 다양하지만, 2027-2030년 사이에 초기 AGI가 등장할 가능성이 있다는 전망
@@ -989,7 +1133,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 * **멀티모달 에이전트**: 텍스트, 이미지, 음성 통합 처리
 * **도메인 특화 LLM**: 의료, 금융, 법률 등 특정 산업에 최적화된 모델
 
-**📌 용어 설명**: **[도메인 특화 LLM]**: 특정 분야(의료, 금융, 법률 등)에 최적화된 언어 모델. 일반적인 LLM보다 특정 분야에서 더 정확한 성능을 보입니다.
+**[도메인 특화 LLM]**: 특정 분야(의료, 금융, 법률 등)에 최적화된 언어 모델. 일반적인 LLM보다 특정 분야에서 더 정확한 성능을 보입니다.
 * **멀티 에이전트 시스템**: 여러 에이전트의 협업을 통한 복잡한 작업 수행
 
 **2027-2028년 예상 발전**:
@@ -1009,7 +1153,6 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 * 이에 따른 대역폭 수요 급증 및 네트워크 인프라 혁신 필요
 * 데이터센터 확장 및 엣지 컴퓨팅 인프라 구축 가속화
 
-**📌 용어 설명**:
 * **[대역폭 (Bandwidth)]**: 네트워크를 통해 전송할 수 있는 데이터의 양. 도로의 폭과 같아서, 폭이 넓을수록 더 많은 데이터를 빠르게 전송할 수 있습니다.
 * **[데이터센터]**: 대량의 컴퓨터 서버를 보관하고 관리하는 시설. AI가 작동하기 위해 필요한 컴퓨팅 자원을 제공합니다.
 * **[엣지 컴퓨팅]**: 데이터를 클라우드로 보내지 않고 현장(엣지)에서 바로 처리하는 기술. 빠른 반응이 필요한 경우에 사용됩니다.
@@ -1025,7 +1168,7 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 * 일부 반복적 업무의 자동화로 인한 직업 변화
 * 새로운 직업 창출: AI 에이전트 관리자, AI 윤리 전문가, 프롬프트 엔지니어 등
 
-**📌 용어 설명**: **[프롬프트 엔지니어]**: AI에게 효과적인 지시를 내리는 전문가. AI가 원하는 결과를 얻기 위해 질문이나 지시를 설계하는 사람.
+**[프롬프트 엔지니어]**: AI에게 효과적인 지시를 내리는 전문가. AI가 원하는 결과를 얻기 위해 질문이나 지시를 설계하는 사람.
 * 인간 고유의 소프트 스킬(공감, 협상, 리더십)의 중요성 증가
 
 **교육 시스템 변화**:
@@ -1126,27 +1269,3 @@ Gemini 2.0 계열은 **이미지/오디오 출력**과 도구 사용 등 "에이
 | AI 기본법 시행 | 위키독스 | https://wikidocs.net/blog/%40daje0601/6154/ |
 
 ---
-
-[1]: https://hai.stanford.edu/ai-index/2025-ai-index-report "The 2025 AI Index Report | Stanford HAI"
-[2]: https://openai.com/index/new-tools-for-building-agents/?utm_source=chatgpt.com "New tools for building agents"
-[3]: https://arxiv.org/abs/1706.03762?utm_source=chatgpt.com "Attention Is All You Need"
-[4]: https://openai.com/index/chatgpt/?utm_source=chatgpt.com "Introducing ChatGPT"
-[5]: https://openai.com/index/hello-gpt-4o/?utm_source=chatgpt.com "Hello GPT-4o"
-[6]: https://openai.com/index/introducing-gpt-5/?utm_source=chatgpt.com "Introducing GPT-5"
-[7]: https://arxiv.org/abs/2005.11401?utm_source=chatgpt.com "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-[8]: https://arxiv.org/abs/2210.03629?utm_source=chatgpt.com "ReAct: Synergizing Reasoning and Acting in Language Models"
-[9]: https://www.anthropic.com/news/3-5-models-and-computer-use?utm_source=chatgpt.com "Introducing computer use, a new Claude 3.5 Sonnet, and ..."
-[10]: https://blog.google/technology/google-deepmind/google-gemini-ai-update-december-2024/?utm_source=chatgpt.com "Introducing Gemini 2.0: our new AI model for the agentic era"
-[11]: https://www.anthropic.com/news/claude-3-7-sonnet?utm_source=chatgpt.com "Claude 3.7 Sonnet and Claude Code"
-[12]: https://www.anthropic.com/research/prompt-injection-defenses?utm_source=chatgpt.com "Mitigating the risk of prompt injections in browser use"
-[13]: https://comtrade.un.org/?utm_source=chatgpt.com "UN Comtrade - the United Nations"
-[14]: https://www.fao.org/statistics/en?utm_source=chatgpt.com "Statistics | FAO | Food and Agriculture Organization of the ..."
-[15]: https://www.worldbank.org/en/research/commodity-markets?utm_source=chatgpt.com "Commodity Markets"
-[16]: https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research?utm_source=chatgpt.com "Introducing Perplexity Deep Research"
-[17]: https://www.anthropic.com/news/developing-computer-use?utm_source=chatgpt.com "Developing a computer use model"
-[18]: https://www.anthropic.com/news/claude-4?utm_source=chatgpt.com "Introducing Claude 4"
-[19]: https://www.anthropic.com/news/claude-opus-4-5?utm_source=chatgpt.com "Introducing Claude Opus 4.5"
-[20]: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai?utm_source=chatgpt.com "AI Act | Shaping Europe's digital future - European Union"
-[21]: https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf?utm_source=chatgpt.com "Artificial Intelligence Risk Management Framework (AI RMF 1.0)"
-[22]: https://www.oecd.org/en/topics/ai-principles.html?utm_source=chatgpt.com "AI principles"
-[23]: https://www.iso.org/standard/42001?utm_source=chatgpt.com "ISO/IEC 42001:2023 - AI management systems"
